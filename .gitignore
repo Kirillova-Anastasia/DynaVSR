@@ -7,8 +7,6 @@ tb_logger/*
 *.png
 *.jpg
 *.gif
-*.pt
-*.pth
 *.npy
 *.pytorch
 *.swp
