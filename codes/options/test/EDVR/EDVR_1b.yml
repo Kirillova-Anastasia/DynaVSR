@@ -34,7 +34,7 @@ datasets:
   val:
    name: Demo
    mode: demo
-   dataroot: /content/drive/MyDrive/test1/test1_bicubic  # Edit the dataroot here.
+   dataroot: /dataset/test1_bicubic_noise2  # Edit the dataroot here.
    cache_data: True
    N_frames: 5
    padding: new_info
@@ -60,13 +60,13 @@ network_E:
 
 #### path
 path:
-  bicubic_G: pretrained_models/BaselineVSR/EDVR_L_REDS_S4.pth
-  fixed_E: pretrained_models/MFDN/MFDN_REDS_S4.pth
-  pretrain_model_G: pretrained_models/EDVR/REDS_G_S4.pth
-  pretrain_model_E: pretrained_models/EDVR/REDS_E_S4.pth
+  bicubic_G: /workspace/DynaVSR/pretrained_models/BaselineVSR/EDVR_L_REDS_S4.pth
+  fixed_E: /workspace/DynaVSR/pretrained_models/MFDN/MFDN_REDS_S4.pth
+  pretrain_model_G: /workspace/DynaVSR/pretrained_models/EDVR/REDS_G_S4.pth
+  pretrain_model_E: /workspace/DynaVSR/pretrained_models/EDVR/REDS_E_S4.pth
   strict_load: true
   resume_state: ~
-  img_save_path: /content/drive/MyDrive/result
+  img_save_path: /output
 
 #### training settings: learning rate scheme, loss
 train:
