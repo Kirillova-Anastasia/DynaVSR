@@ -34,7 +34,7 @@ datasets:
   val:
    name: Demo
    mode: demo
-   dataroot: /dataset/test2_bicubic_noise2  # Edit the dataroot here.
+   dataroot: /dataset/test3_bicubic_noise2  # Edit the dataroot here.
    cache_data: True
    N_frames: 7
    padding: new_info
