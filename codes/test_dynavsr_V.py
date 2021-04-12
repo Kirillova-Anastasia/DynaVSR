@@ -29,20 +29,22 @@ def init_dist(backend='nccl', **kwargs):
     torch.cuda.set_device(rank % num_gpus)
     dist.init_process_group(backend=backend, **kwargs)
 
+#### options
+parser = argparse.ArgumentParser()
+parser.add_argument('-opt', type=str, help='Path to option YAML file.')
+parser.add_argument('-save_dir', type=str, help='')
+parser.add_argument('--launcher', choices=['none', 'pytorch'], default='none',
+                    help='job launcher')
+parser.add_argument('--local_rank', type=int, default=0)
+parser.add_argument('--exp_name', type=str, default='temp')
+parser.add_argument('--degradation_type', type=str, default=None)
+parser.add_argument('--sigma_x', type=float, default=None)
+parser.add_argument('--sigma_y', type=float, default=None)
+parser.add_argument('--theta', type=float, default=None)
+args = parser.parse_args()
+
 
 def main():
-    #### options
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-opt', type=str, help='Path to option YAML file.')
-    parser.add_argument('--launcher', choices=['none', 'pytorch'], default='none',
-                        help='job launcher')
-    parser.add_argument('--local_rank', type=int, default=0)
-    parser.add_argument('--exp_name', type=str, default='temp')
-    parser.add_argument('--degradation_type', type=str, default=None)
-    parser.add_argument('--sigma_x', type=float, default=None)
-    parser.add_argument('--sigma_y', type=float, default=None)
-    parser.add_argument('--theta', type=float, default=None)
-    args = parser.parse_args()
     if args.exp_name == 'temp':
         opt = option.parse(args.opt, is_train=False)
     else:
