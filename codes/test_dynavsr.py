@@ -160,7 +160,7 @@ def main():
         else:
             name = folder
 
-        train_folder = os.path.join(opt['path']['img_save_path'], 'DynaVSR', name)
+        train_folder = os.path.join(opt['path']['img_save_path'], 'DynaVSR-R', name)
         maml_train_folder = train_folder
 
         if not os.path.exists(train_folder):

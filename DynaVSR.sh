@@ -6,17 +6,17 @@ cd /workspace/DynaVSR
 apt-get update && apt install -y libgl1-mesa-glx
 apt-get install -y libgtk2.0-dev
 
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_1bn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_1bn_V.yml -save_dir /output/DynaVSR-V
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_1gn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_1gn_V.yml -save_dir /output/DynaVSR-V
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_1bn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_1bn_V.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_1gn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_1gn_V.yml -save_dir /output/DynaVSR
 
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_2bn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_2bn_V.yml -save_dir /output/DynaVSR-V
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_2gn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_2gn_V.yml -save_dir /output/DynaVSR-V
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_2bn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_2bn_V.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_2gn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_2gn_V.yml -save_dir /output/DynaVSR
 
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_3bn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_3bn_V.yml -save_dir /output/DynaVSR-V
-python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_3gn.yml -save_dir /output/DynaVSR-R
-python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_3gn_V.yml -save_dir /output/DynaVSR-V
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_3bn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_3bn_V.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_3gn.yml -save_dir /output/DynaVSR
+python3 codes/test_dynavsr_V.py -opt codes/options/test/EDVR/EDVR_3gn_V.yml -save_dir /output/DynaVSR
