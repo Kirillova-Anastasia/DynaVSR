@@ -365,4 +365,12 @@ def main():
     print('End of evaluation.')
 
 if __name__ == '__main__':
+    with open(os.path.join(args.save_dir, 'DynaVSR-V.txt'), 'a') as f:
+        f.write('OK ' + args.opt + '\n')
+    begin = time.time()
+
     main()
+
+    end = time.time()
+    with open(os.path.join(args.save_dir, 'DynaVSR-V.txt'), 'a') as f:
+        f.write('Full time on {}: {}\n'.format(args.opt, end - begin))
