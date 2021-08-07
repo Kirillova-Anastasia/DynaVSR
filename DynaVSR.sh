@@ -5,3 +5,5 @@ python setup.py develop
 cd /workspace/DynaVSR
 apt-get update && apt install -y libgl1-mesa-glx
 apt-get install -y libgtk2.0-dev
+
+python3 codes/test_dynavsr.py -opt codes/options/test/EDVR/EDVR_2b.yml -save_dir /output/DynaVSR
